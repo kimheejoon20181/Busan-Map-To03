@@ -9,11 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var contents = NSArray()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Busan Map Tour"
+        
+        let path = Bundle.main.path(forResource: "geoData", ofType: "plist")
+        contents = NSArray(contentsOfFile: path!)
     }
+    
+    override func 
 
 
 }
